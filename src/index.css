@@ -48,8 +48,31 @@ html {
 }
 
 .faq-element {
-  display: flex;
-  justify-content: space-between;
   border-bottom: 1px solid hsl(240, 5%, 91%);
   padding: 1rem 0;
+  cursor: pointer;
+}
+
+.faq-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.rotate-arrow {
+  transform: rotate(180deg);
+}
+
+.answer-text {
+  color: hsl(240, 6%, 50%);
+  font-size: 11px;
+  display: none;
+}
+
+.display-block {
+  display: block;
 }
