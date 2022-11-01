@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import arrowDown from "./images/icon-arrow-down.svg";
-import boxDesktop from "./images/illustration-box-desktop.svg";
 
 function App() {
   const faqData = [
@@ -69,18 +68,20 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="col-2 col-img">
-          <img className="box-desktop" src={boxDesktop} alt="box-desktop" />
-        </div>
+        <div className="col-2 col-img"></div>
         <div className="col-2">
-          <h1>FAQ</h1>
+          <h1 className="faq-section-title">FAQ</h1>
           <div className="faq-section">
             <div
               className="faq-element"
               onClick={() => clickHandler(faqData[0].id)}
             >
               <div className="faq-row">
-                <span className={faqClicked[0] ? "text-bold" : null}>
+                <span
+                  className={
+                    "faq-title " + (faqClicked[0] ? "text-bold" : null)
+                  }
+                >
                   {faqData[0].faq}
                 </span>
                 <div>
@@ -105,7 +106,11 @@ function App() {
               onClick={() => clickHandler(faqData[1].id)}
             >
               <div className="faq-row">
-                <span className={faqClicked[1] ? "text-bold" : null}>
+                <span
+                  className={
+                    "faq-title " + (faqClicked[1] ? "text-bold" : null)
+                  }
+                >
                   {faqData[1].faq}
                 </span>
                 <div>
@@ -130,7 +135,11 @@ function App() {
               onClick={() => clickHandler(faqData[2].id)}
             >
               <div className="faq-row">
-                <span className={faqClicked[2] ? "text-bold" : null}>
+                <span
+                  className={
+                    "faq-title " + (faqClicked[2] ? "text-bold" : null)
+                  }
+                >
                   {faqData[2].faq}
                 </span>
                 <div>
@@ -155,7 +164,11 @@ function App() {
               onClick={() => clickHandler(faqData[3].id)}
             >
               <div className="faq-row">
-                <span className={faqClicked[3] ? "text-bold" : null}>
+                <span
+                  className={
+                    "faq-title " + (faqClicked[3] ? "text-bold" : null)
+                  }
+                >
                   {faqData[3].faq}
                 </span>
                 <div>
@@ -180,7 +193,11 @@ function App() {
               onClick={() => clickHandler(faqData[4].id)}
             >
               <div className="faq-row">
-                <span className={faqClicked[4] ? "text-bold" : null}>
+                <span
+                  className={
+                    "faq-title " + (faqClicked[4] ? "text-bold" : null)
+                  }
+                >
                   {faqData[4].faq}
                 </span>
                 <div>
